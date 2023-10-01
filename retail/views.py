@@ -4,12 +4,12 @@ from retail.serializers.serializers import SupplierSerializers, ProductSerialize
 
 
 class SupplierViewSet(viewsets.ModelViewSet):
-    """Реализация CRUD для Module с помощью viewsets"""
+    """Реализация CRUD для Supplier с помощью viewsets"""
     serializer_class = SupplierSerializers
     queryset = Supplier.objects.all()
 
 
 class ProductViewSet(viewsets.ModelViewSet):
-    """Реализация CRUD для Module с помощью viewsets"""
+    """Реализация CRUD для Product с помощью viewsets"""
     serializer_class = ProductSerializers
     queryset = Product.objects.all()
