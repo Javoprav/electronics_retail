@@ -1,0 +1,11 @@
+coverage
+Django
+django-cors-headers
+django-filter
+django-timezone-field
+djangorestframework
+djangorestframework-simplejwt
+drf-yasg
+Pillow
+psycopg2-binary
+python-dotenv
