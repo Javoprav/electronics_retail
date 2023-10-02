@@ -71,9 +71,7 @@
       "country": "Франция",
       "city": "Париж",
       "street": "Лягушачьих лапок",
-      "house_number": "2",
-      "debt": 22,
-      "level": 0
+      "house_number": "2"
     }
   },
   {
@@ -85,9 +83,7 @@
       "country": "США",
       "city": "Париж",
       "street": "гастритная",
-      "house_number": "33",
-      "debt": 33,
-      "level": 1
+      "house_number": "33"
     }
   },
   {
@@ -99,8 +95,48 @@
       "country": "Русь",
       "city": "Московия",
       "street": "skypro",
+      "house_number": "4"
+    }
+  },
+  {
+    "model": "retail.network",
+    "pk": 7,
+    "fields": {
+      "name": "сеть1",
+      "email": "network@gmail.com",
+      "country": "Русь",
+      "city": "Московия",
+      "street": "skypro",
       "house_number": "4",
-      "debt": 44,
+      "supplier": 1,
+      "level": 0
+    }
+  },
+  {
+    "model": "retail.network",
+    "pk": 8,
+    "fields": {
+      "name": "сеть2",
+      "email": "network2@gmail.com",
+      "country": "Русь",
+      "city": "Московия",
+      "street": "skypro",
+      "house_number": "4",
+      "supplier": 2,
+      "level": 1
+    }
+  },
+  {
+    "model": "retail.network",
+    "pk": 9,
+    "fields": {
+      "name": "сеть3",
+      "email": "network3@gmail.com",
+      "country": "Русь",
+      "city": "Московия",
+      "street": "skypro",
+      "house_number": "4",
+      "supplier": 2,
       "level": 2
     }
   },
@@ -111,7 +147,8 @@
       "name": "Шкаф",
       "model": "super_puper",
       "release_date": "2023-10-29",
-      "supplier": 1
+      "network": 7,
+      "debt": 11
     }
   },
   {
@@ -121,7 +158,8 @@
       "name": "гастрит-бургер",
       "model": "super_burger",
       "release_date": "2023-10-29",
-      "supplier": 2
+      "network": 8,
+      "debt": 22
     }
   },
   {
@@ -131,7 +169,8 @@
       "name": "ничега",
       "model": "super_puper234",
       "release_date": "2023-10-29",
-      "supplier": 3
+      "network": 9,
+      "debt": 33
     }
   }
 ]
