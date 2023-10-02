@@ -112,10 +112,6 @@ flake8 --exclude=venv,migrations --ignore=E501
 ```bash
 python manage.py runserver
 ```
-Собрать и запустить образ docker-compose
-```bash
-docker-compose up -d --build
-```
 Запустить тесты
 ```bash
 python3 manage.py test --verbosity 2

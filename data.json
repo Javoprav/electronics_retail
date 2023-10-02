@@ -1,0 +1,137 @@
+[
+  {
+    "model": "users.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$QnfTUEQmbLVGmK8ZJxeBu7$m/7cVuup9C2R+YamI3aT6CdKDv9n9UYlVLYUcNCyBeA=",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "",
+      "last_name": "",
+      "is_staff": false,
+      "date_joined": "2023-08-29T15:58:48.830Z",
+      "email": "user@user1.com",
+      "phone": null,
+      "avatar": "",
+      "city": null,
+      "role": "member",
+      "is_active": true,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$1WbpOJcjeei2jCl8MW0GJt$iCmAg/iUPp+6iOCpIUAJGF4Tw2PuRCNjcPHdlvCYQ6M=",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "",
+      "last_name": "",
+      "is_staff": true,
+      "date_joined": "2023-08-29T15:58:48.953Z",
+      "email": "moder@moder1.com",
+      "phone": null,
+      "avatar": "",
+      "city": null,
+      "role": "moderator",
+      "is_active": true,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$TzMlUzj9UnGtM0GgbmAUfc$hIaTfncUQAYBpqhMqoPJS9IkIpCZd5cpuVd7BwqmjpQ=",
+      "last_login": "2023-08-29T15:59:07.960Z",
+      "is_superuser": true,
+      "first_name": "admin",
+      "last_name": "admin",
+      "is_staff": true,
+      "date_joined": "2023-08-29T15:58:53.911Z",
+      "email": "admin@gmail.com",
+      "phone": null,
+      "avatar": "",
+      "city": null,
+      "role": "member",
+      "is_active": true,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "retail.supplier",
+    "pk": 1,
+    "fields": {
+      "name": "Леруа",
+      "email": "lerua@gmail.com",
+      "country": "Франция",
+      "city": "Париж",
+      "street": "Лягушачьих лапок",
+      "house_number": "2",
+      "debt": 22,
+      "level": 0
+    }
+  },
+  {
+    "model": "retail.supplier",
+    "pk": 2,
+    "fields": {
+      "name": "факдональдс",
+      "email": "donald@gmail.com",
+      "country": "США",
+      "city": "Париж",
+      "street": "гастритная",
+      "house_number": "33",
+      "debt": 33,
+      "level": 1
+    }
+  },
+  {
+    "model": "retail.supplier",
+    "pk": 3,
+    "fields": {
+      "name": "сбер",
+      "email": "sber@gmail.com",
+      "country": "Русь",
+      "city": "Московия",
+      "street": "skypro",
+      "house_number": "4",
+      "debt": 44,
+      "level": 2
+    }
+  },
+  {
+    "model": "retail.product",
+    "pk": 4,
+    "fields": {
+      "name": "Шкаф",
+      "model": "super_puper",
+      "release_date": "2023-10-29",
+      "supplier": 1
+    }
+  },
+  {
+    "model": "retail.product",
+    "pk": 5,
+    "fields": {
+      "name": "гастрит-бургер",
+      "model": "super_burger",
+      "release_date": "2023-10-29",
+      "supplier": 2
+    }
+  },
+  {
+    "model": "retail.product",
+    "pk": 6,
+    "fields": {
+      "name": "ничега",
+      "model": "super_puper234",
+      "release_date": "2023-10-29",
+      "supplier": 3
+    }
+  }
+]

@@ -33,7 +33,7 @@ class Product(models.Model):
     model = models.CharField(max_length=100, verbose_name='модель')
     release_date = models.DateField(verbose_name='дата')
     supplier = models.ForeignKey(Supplier, on_delete=models.CASCADE, verbose_name='звено')
-    created_at = models.DateTimeField(auto_now_add=True, verbose_name='время создания')
+    created_at = models.DateTimeField(auto_now_add=True, verbose_name='время создания', null=True, blank=True)
 
     class Meta:
         verbose_name = 'Продукт'

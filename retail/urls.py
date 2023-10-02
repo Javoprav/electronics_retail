@@ -3,7 +3,7 @@ from django.urls import path, include
 from retail.views import SupplierViewSet, ProductViewSet
 
 router = DefaultRouter()
-router.register(r'edu_modules', SupplierViewSet, basename='edu_modules')
+router.register(r'supplier', SupplierViewSet, basename='supplier')
 
 router_product = DefaultRouter()
 router_product.register(r'product', ProductViewSet, basename='product')
