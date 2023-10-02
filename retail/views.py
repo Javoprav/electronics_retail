@@ -9,6 +9,12 @@ class SupplierViewSet(viewsets.ModelViewSet):
     queryset = Supplier.objects.all()
 
 
+class NetworkViewSet(viewsets.ModelViewSet):
+    """Реализация CRUD для Supplier с помощью viewsets"""
+    serializer_class = SupplierSerializers
+    queryset = Supplier.objects.all()
+
+
 class ProductViewSet(viewsets.ModelViewSet):
     """Реализация CRUD для Product с помощью viewsets"""
     serializer_class = ProductSerializers
