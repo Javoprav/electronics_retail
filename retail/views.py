@@ -1,5 +1,5 @@
 from rest_framework import viewsets
-from retail.models import Supplier, Product
+from retail.models import Supplier, Product, Network
 from retail.serializers.serializers import SupplierSerializers, ProductSerializers
 
 
@@ -12,7 +12,7 @@ class SupplierViewSet(viewsets.ModelViewSet):
 class NetworkViewSet(viewsets.ModelViewSet):
     """Реализация CRUD для Supplier с помощью viewsets"""
     serializer_class = SupplierSerializers
-    queryset = Supplier.objects.all()
+    queryset = Network.objects.all()
 
 
 class ProductViewSet(viewsets.ModelViewSet):

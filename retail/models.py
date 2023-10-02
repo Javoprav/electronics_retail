@@ -10,6 +10,7 @@ class Supplier(models.Model):
     city = models.CharField(max_length=100, verbose_name='город')
     street = models.CharField(max_length=100, verbose_name='улица')
     house_number = models.CharField(max_length=100, verbose_name='номер дома')
+    debt = models.DecimalField(max_digits=10, decimal_places=2, verbose_name='задолженность')
 
     class Meta:
         verbose_name = 'Поставщик'
@@ -51,7 +52,6 @@ class Product(models.Model):
     model = models.CharField(max_length=100, verbose_name='модель')
     release_date = models.DateField(verbose_name='дата')
     network = models.ForeignKey(Network, on_delete=models.CASCADE, verbose_name='звено сети')
-    debt = models.DecimalField(max_digits=10, decimal_places=2, verbose_name='задолженность')
     created_at = models.DateTimeField(auto_now_add=True, verbose_name='время создания', null=True, blank=True)
 
     class Meta:

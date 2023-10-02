@@ -71,7 +71,8 @@
       "country": "Франция",
       "city": "Париж",
       "street": "Лягушачьих лапок",
-      "house_number": "2"
+      "house_number": "2",
+      "debt": 11
     }
   },
   {
@@ -83,7 +84,8 @@
       "country": "США",
       "city": "Париж",
       "street": "гастритная",
-      "house_number": "33"
+      "house_number": "33",
+      "debt": 22
     }
   },
   {
@@ -95,7 +97,8 @@
       "country": "Русь",
       "city": "Московия",
       "street": "skypro",
-      "house_number": "4"
+      "house_number": "4",
+      "debt": 33
     }
   },
   {
@@ -147,8 +150,7 @@
       "name": "Шкаф",
       "model": "super_puper",
       "release_date": "2023-10-29",
-      "network": 7,
-      "debt": 11
+      "network": 7
     }
   },
   {
@@ -158,8 +160,7 @@
       "name": "гастрит-бургер",
       "model": "super_burger",
       "release_date": "2023-10-29",
-      "network": 8,
-      "debt": 22
+      "network": 8
     }
   },
   {
@@ -169,8 +170,7 @@
       "name": "ничега",
       "model": "super_puper234",
       "release_date": "2023-10-29",
-      "network": 9,
-      "debt": 33
+      "network": 9
     }
   }
 ]
