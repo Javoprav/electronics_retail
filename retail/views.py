@@ -2,12 +2,17 @@ from rest_framework import viewsets
 from retail.models import Supplier, Product, Network
 from rest_framework.response import Response
 from retail.serializers.serializers import SupplierSerializers, ProductSerializers, NetworkSerializers
+from rest_framework.filters import OrderingFilter
+from django_filters.rest_framework import DjangoFilterBackend, FilterSet
 
 
 class SupplierViewSet(viewsets.ModelViewSet):
     """Реализация CRUD для Supplier с помощью viewsets"""
     serializer_class = SupplierSerializers
     queryset = Supplier.objects.all()
+    filter_backends = [DjangoFilterBackend, OrderingFilter]
+    filterset_fields = ['country']
+    filterset_class = FilterSet
 
     def update(self, request, *args, **kwargs):
         partial = kwargs.pop('partial', False)
