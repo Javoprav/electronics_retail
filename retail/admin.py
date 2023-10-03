@@ -16,7 +16,6 @@ class SupplierAdmin(admin.ModelAdmin):
     clear_debt.short_description = "Очистить задолженность"
 
 
-
 @admin.register(Network)
 class NetworkAdmin(admin.ModelAdmin):
     list_display = ['name', 'email', 'country', 'city', 'street', 'house_number', 'supplier']
