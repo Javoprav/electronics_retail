@@ -43,7 +43,7 @@ sudo -u postgres psql
 Cоздать базу данных 
 с помощью следующей команды:
 ```bash
-CREATE DATABASE edu_modules;
+CREATE DATABASE electronics_retail;
 ```
 ```bash
 CREATE USER admin WITH PASSWORD '123';
